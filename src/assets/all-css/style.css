@@ -5,18 +5,18 @@
     --light: #fff;
 }
 
-.home-banner{
+.home-banner {
     width: 100%;
     height: auto;
     margin-bottom: 0;
 }
 
-.home-banner .home-banner-container{
+.home-banner .home-banner-container {
     width: 100%;
     height: auto;
 }
 
-.home-banner .home-banner-container img{
+.home-banner .home-banner-container img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -24,14 +24,14 @@
 
 /* Banner End  */
 
-.home-about-section{
+.home-about-section {
     width: 100%;
     height: auto;
     background-color: var(--gray);
     padding: 30px 30px;
 }
 
-.home-about-section .home-about-container{
+.home-about-section .home-about-container {
     width: 100%;
     height: auto;
     display: flex;
@@ -41,13 +41,13 @@
 }
 
 
-.home-about-section .home-about-container .home-aboout-content{
+.home-about-section .home-about-container .home-aboout-content {
     width: 57%;
     height: auto;
 
 }
 
-.home-about-section .home-about-container .home-aboout-content h2{
+.home-about-section .home-about-container .home-aboout-content h2 {
     color: var(--white);
     font-size: 40px;
     font-weight: 100;
@@ -55,74 +55,150 @@
 }
 
 
-.home-about-section .home-about-container .home-aboout-content p{
+.home-about-section .home-about-container .home-aboout-content p {
     color: var(--white);
     font-weight: 100 !important;
     margin-bottom: 3%;
 }
 
-.home-about-section .home-about-container .home-about-images{
+.home-about-section .home-about-container .home-about-images {
     width: 40%;
     height: auto;
     display: flex;
     justify-content: end;
-    
+
 }
 
 
-.home-about-section .home-about-container .home-about-images img{
+.home-about-section .home-about-container .home-about-images img {
     width: 450px;
     height: 450px;
     object-fit: cover;
     border-radius: 50%;
-    
+
 }
 
 
 @media screen and (max-width:800px) {
 
-    
-.home-about-section .home-about-container{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
 
-    .home-about-section .home-about-container .home-aboout-content{
+    .home-about-section .home-about-container {
         width: 100%;
         height: auto;
-    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
     }
-    .home-about-section .home-about-container .home-about-images{
+
+    .home-about-section .home-about-container .home-aboout-content {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .home-about-section .home-about-container .home-about-images {
         width: 100%;
         height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
     }
-    
-    
-    .home-about-section .home-about-container .home-about-images img{
+
+
+    .home-about-section .home-about-container .home-about-images img {
         width: 300px;
         height: 300px;
         object-fit: cover;
         border-radius: 50%;
-        
+
     }
-    
+
 }
 
-@media screen and (min-width:800px) and (max-width:1200px){
-    .home-about-section .home-about-container .home-about-images img{
+@media screen and (min-width:800px) and (max-width:1200px) {
+    .home-about-section .home-about-container .home-about-images img {
         width: 300px;
         height: 300px;
         object-fit: cover;
         border-radius: 50%;
-        
+
+    }
+}
+
+/* Home College  */
+
+.home-college {
+    width: 100%;
+    height: auto;
+    padding: 1% 2%;
+}
+
+.home-college-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.home-college-boxs {
+    width: 24%;
+    margin-bottom: 1%;
+    height: 200px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.home-college-boxs img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.home-college-boxs::before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.home-college-boxs h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    z-index: 2;
+}
+
+@media screen and (max-width:426px) {
+    .home-college-boxs {
+        width: 100%;
+        margin-bottom: 1%;
+        height: 200px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:768px){
+    .home-college-boxs {
+        width: 30%;
+        margin-bottom: 1%;
+        height: 200px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 }

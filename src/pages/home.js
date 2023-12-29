@@ -34,9 +34,51 @@ function Home() {
           </div>
         </div>
       </section>
-      
+
 
       {/* Home About Section End */}
+
+      {/* Home College Photos Start */}
+
+
+      <section className="home-college">
+        <div className="home-college-container">
+          <div className="home-college-boxs">
+            <img src={banner1} alt="" />
+            <h3>FESTIVALS</h3>
+          </div>
+          <div className="home-college-boxs">
+            <img src={banner2} alt="" />
+            <h3>WEDDINGS</h3>
+          </div>
+          <div className="home-college-boxs">
+            <img src={banner1} alt="" />
+            <h3>PORTRAITS</h3>
+          </div>
+          <div className="home-college-boxs">
+            <img src={banner2} alt="" />
+            <h3>CORPORATE</h3>
+          </div>
+          <div className="home-college-boxs">
+            <img src={banner1} alt="" />
+            <h3>FASHION</h3>
+          </div>
+          <div className="home-college-boxs">
+            <img src={banner2} alt="" />
+            <h3>NATURE</h3>
+          </div>
+          <div className="home-college-boxs">
+            <img src={banner1} alt="" />
+            <h3>LANDSCAPES </h3>
+          </div>
+          <div className="home-college-boxs">
+            <img src={banner2} alt="" />
+            <h3>SPORTS</h3>
+          </div>
+        </div>
+      </section>
+
+      {/* Home College Photos End */}
 
     </>
   )
